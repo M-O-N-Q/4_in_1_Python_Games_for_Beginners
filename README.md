@@ -18,7 +18,11 @@ that let me understand how to use simple variables, loops, data type conversions
   I made two variables to have random numbers from 0 to 100
   These two numbers would be either added, subtracted, multiplid or divided to each other ( ranndom number a {+ - * /} random number b = answer)
 
+
 I used while to loop the whole game so one could play again
+
 I used if else for the conditional statements
+
 I used int(), string() and float() for the conversions
+
 I used isdigit() and isalpha() to prevent incorrect inputs
