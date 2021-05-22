@@ -1,3 +1,4 @@
+
 import random as rand
 
 play_again4 = 'y'
@@ -19,28 +20,32 @@ while play_again2 == 'y':
 
         play_again = 'y'
         while play_again == 'y':
-            rand_num = rand.randint(1, 9)
             print("Guessing Game!!!")
+            rand_num = rand.randint(1, 9)
             num = input("Guess the number from 1 to 9: ")
             num = str(num)
+            rand_num = str(rand_num)
 
             if num.isdigit() is False:
                 print("Incorrect input")
-                play_again = input("\nDo you want to play again? y/n: ")
-                play_again = str(play_again)
+                play_again = 'y'
 
             if num == rand_num:
-                print("You are correct!!!")
-                play_again = input("\nDo you want to play again? y/n: ")
-                play_again = str(play_again)
-            elif num != rand_num:
-                print("You are wrong!!!")
+                print("\nYou are correct!!!")
                 rand_num = str(rand_num)
                 print("The answer is: " + rand_num)
                 play_again = input("\nDo you want to play again? y/n: ")
                 play_again = str(play_again)
-        play_again2 = input("Do you want to choose game? y/n: ")
-        play_again2 = str(play_again2)
+
+            elif num != rand_num:
+                print("\nYou are wrong!!!")
+                rand_num = str(rand_num)
+                print("The answer is: " + rand_num)
+
+                play_again = input("\nDo you want to play again? y/n: ")
+                play_again = str(play_again)
+        # play_again2 = input("Do you want to choose game? y/n: ")
+        # play_again2 = str(play_again2)
 
     elif which_game == '2':
         play_again3 = 'y'
@@ -99,11 +104,11 @@ while play_again2 == 'y':
                     sum_2 = int(sum_2)
 
                 if sum_1 == sum_2:
-                    print("You are Correct!!")
+                    print("\nYou are Correct!!")
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
                 elif sum_1 != sum_2:
-                    print("You are Wrong!!!")
+                    print("\nYou are Wrong!!!")
                     print("\nThe correct answer is: " + str(sum_1))
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
@@ -121,11 +126,11 @@ while play_again2 == 'y':
                 else:
                     sub_2 = int(sub_2)
                 if sub_1 == sub_2:
-                    print("You are Correct!!")
+                    print("\nYou are Correct!!")
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
                 elif sub_1 != sub_2:
-                    print("You are Wrong!!!")
+                    print("\nYou are Wrong!!!")
                     print("\nThe correct answer is: " + str(sub_1))
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
@@ -142,11 +147,11 @@ while play_again2 == 'y':
                 else:
                     mul_2 = int(mul_2)
                 if mul_1 == mul_2:
-                    print("You are Correct!!")
+                    print("\nYou are Correct!!")
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
                 elif mul_1 != mul_2:
-                    print("You are Wrong!!!")
+                    print("\nYou are Wrong!!!")
                     print("\nThe correct answer is: " + str(mul_1))
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
@@ -165,11 +170,11 @@ while play_again2 == 'y':
                 else:
                     div_2 = float(div_2)
                 if div_1 == div_2:
-                    print("You are Correct!!")
+                    print("\nYou are Correct!!")
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
                 elif div_1 != div_2:
-                    print("You are Wrong!!!")
+                    print("\nYou are Wrong!!!")
                     print("\nThe correct answer is: " + str(div_1))
                     play_again5 = input("\nDo you want to play again? y/n: ")
                     play_again5 = str(play_again5)
